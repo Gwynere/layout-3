@@ -1,0 +1,44 @@
+//  Button Palette
+$button-palette: (
+  primary: #1779ba,
+  secondary: #767676,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #cc4b37
+);
+
+@each $name, $color in $button-palette {
+  .#{$name} {
+    background-color: $color;
+    &:hover, &:focus {
+      background-color: transparent;
+      box-shadow: 0px 0px 0px 2px $color inset;
+      color: $color;
+    }
+  }
+}
+
+// Header Sizes
+$headerSizes: 2em 1.6em 1.3em 1.2em;
+$index: 1;
+
+@while $index <= 4 {
+  h#{$index}, .h#{$index} {
+    font-size: nth($headerSizes, $index);
+    line-height: 1;
+  }
+  $index: $index + 1;
+}
+
+// Links
+@mixin link{
+    margin: .5rem 0;
+    display: inline-block;
+    transition: .2s all;
+    text-decoration: none;
+}
+
+@mixin hover($color){
+    transition: .2s all;
+    background: lighten($color, 4%);
+}

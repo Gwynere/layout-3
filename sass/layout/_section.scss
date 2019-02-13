@@ -1,0 +1,25 @@
+.section-lg{
+    grid-column: span 4;
+}
+
+.section-md{
+    grid-column: span 4;
+}
+
+.popular{
+
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    }
+}
+
+.hero{
+    min-height: 400px;
+    background: linear-gradient(rgba($dark, .5), rgba($dark, .5)),
+    center / cover no-repeat url('/img/hot-post-1.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $light;
+}

@@ -1,0 +1,7 @@
+// -- MAIN STYLE --
+
+.btn{
+  @include link;
+  color: $light;
+  padding: .5rem 2rem;
+}
