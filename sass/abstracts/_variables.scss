@@ -1,3 +1,4 @@
+// Color Palette
 $light: #fbfbfb;
 $light-grey: #e9e9e9f5;
 $dark-grey: #444444;
@@ -7,10 +8,15 @@ $success: #3adb76;
 $warning: #ffae00;
 $alert: #cc4b37;
 
+// Social Networks Colors
 $facebook: #3b5998;
 $twitter: #1DA1F2;
 $instagram: #e4405f;
 
-$small: 600px;
-$medium: 700px;
-$large: 1000px;
+// Screen size variables
+$screen-xs-min: 425px;  // Tiny phones
+$screen-sm-min: 576px;  // Small tablets and large smartphones (landscape view)
+$screen-md-min: 768px;  // Small tablets (portrait view)
+$screen-lg-min: 992px;  // Tablets and small desktops
+$screen-xl-min: 1200px; // Large tablets and desktops
+
