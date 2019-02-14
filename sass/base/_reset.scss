@@ -18,5 +18,45 @@ img{
 }
 
 section{
-    margin: 100px 0;
+    margin: 2rem 0;
+}
+
+main{
+    @include md{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border: 1px solid red;
+    }
+
+    header{
+        border: 2px solid blueviolet;
+        margin: 1rem;
+        grid-column: span 3;
+    }
+
+    .recent{
+        border: 2px solid olivedrab;
+        margin: 1rem;
+        grid-column: span 2;
+    }
+
+    aside{
+        border: 2px solid lightcoral;
+        margin: 1rem;
+    }
+
+    .banner-lg{
+        grid-column: span 3;
+        padding: 2rem;
+
+        img{
+            height: 230px;
+        }
+    }
+
+    .popular{
+        border: 2px solid lawngreen;
+        margin: 1rem;
+        grid-column: span 3;
+    }
 }

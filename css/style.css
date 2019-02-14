@@ -66,7 +66,38 @@ img {
   object-fit: cover; }
 
 section {
-  margin: 100px 0; }
+  margin: 2rem 0; }
+
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid red; } }
+
+main header {
+  border: 2px solid blueviolet;
+  margin: 1rem;
+  grid-column: span 3; }
+
+main .recent {
+  border: 2px solid olivedrab;
+  margin: 1rem;
+  grid-column: span 2; }
+
+main aside {
+  border: 2px solid lightcoral;
+  margin: 1rem; }
+
+main .banner-lg {
+  grid-column: span 3;
+  padding: 2rem; }
+  main .banner-lg img {
+    height: 230px; }
+
+main .popular {
+  border: 2px solid lawngreen;
+  margin: 1rem;
+  grid-column: span 3; }
 
 h2 {
   text-transform: uppercase;
@@ -180,12 +211,6 @@ p {
       @media (min-width: 768px) {
         .header__nav ul:not(:first-child) {
           display: none; } }
-
-.section-lg {
-  grid-column: span 4; }
-
-.section-md {
-  grid-column: span 4; }
 
 .hero {
   min-height: 400px;
