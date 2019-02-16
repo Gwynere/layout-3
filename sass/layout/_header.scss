@@ -1,9 +1,9 @@
 .header{
-    margin-top: 1rem;
+    margin: 1rem 0;
 
     &__top{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
 
         &__logo{
             @include flex;

@@ -1,7 +1,11 @@
 .container{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1300px;
+
+    @include md{
+        width: 80%;
+    }
 }
 
 .center{
