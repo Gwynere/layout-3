@@ -83,7 +83,7 @@ main header {
   align-items: center;
   color: #fbfbfb; }
 
-main .recent {
+main .section-md {
   grid-column: span 2; }
 
 main .aside {
@@ -260,3 +260,8 @@ p {
       @media (min-width: 768px) {
         .header__nav ul:not(:first-child) {
           display: none; } }
+
+.blog-post {
+  font-size: 1.2rem; }
+  .blog-post p {
+    margin: 2rem 0; }
